@@ -26,3 +26,81 @@
 .imageHeader{
   width: 50vw;
 }
+
+rect {
+  fill: #00bfbf;
+}
+
+
+.axis-y .tick text {
+  font-size: 1.2em;
+  fill: #6f7173;
+}
+
+.axis-x .tick text {
+  font-size: .8em;
+  fill: #6f7173;
+}
+
+.tick line {
+  stroke: #C0C0BB;
+}
+
+.axis-label {
+  font-size: 2.5em;
+  fill: #6f7173;
+  ;
+}
+
+.container {
+  margin: 1em auto 3em auto;
+  width: 100%;
+  padding: 0 2em;
+}
+
+.container .group {
+  padding: 8px 48px;
+  margin: 8px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+label::before {
+  content: "";
+  background: url("../src/img/check-circle.svg");
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: -44px;
+  top: -8px;
+
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked+label::before {
+  transform: scale(1) rotateZ(0deg);
+}
+
+label::after {
+  content: "";
+  border: 2px solid #00bfbf;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -42px;
+  top: -6px;
+  border-radius: 50%;
+}
+
+
+
+

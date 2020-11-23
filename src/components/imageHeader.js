@@ -5,7 +5,7 @@ import parking from '../img/parking.jpg';
 export default class ImageHeader extends React.Component {
     render() {
         return (
-        <img src={parking} alt="Logo" className="imageHeader" />
+        <img src={parking} alt="parking Amsterdam vs PR" className="imageHeader" />
         );
     }
   }

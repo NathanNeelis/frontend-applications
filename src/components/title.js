@@ -1,6 +1,16 @@
-import React from 'react';
-export default class Welcome extends React.Component {
-    render() {
-      return <h1>Hello, {this.props.name}</h1>;
-    }
+function Title(props){
+    return(
+      <h1 style={ HeaderStyle }>{props.title}</h1>
+    );
   }
+
+  export default Title
+
+
+  // Styling
+let HeaderStyle = {
+  margin: "1em 0 1em 0",
+  fontFamily: "'Thasadith', sans-serif",
+  fontSize: "3em"
+};
+    

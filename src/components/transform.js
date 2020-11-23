@@ -202,7 +202,7 @@ function combineData(rsData, city) {
                 city: city, // REPLACES cityFirst and citySecond FOR CITY: CITY
                 capacity: data.capacity // ADDS THE CAPACITY
             }
-        } else if (data.city != undefined) {
+        } else if (data.city !== undefined) {
             return {
                 description: data.description,
                 city: data.city, // CHECKS IF DATA.CITY ALREADY EXIST, IF SO RETURNS THE SAME DATA.
