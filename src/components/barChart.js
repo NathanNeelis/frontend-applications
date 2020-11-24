@@ -12,10 +12,6 @@ function MakeVisualization(props) {
     const svgRef = useRef();
 
     useEffect(() => {
-        console.log(svgRef);
-        console.log('propsdata', props.data)
-        // console.log(svgRef.current.clientHeight)
-
         CreateChart(props.data, svgRef)      
     }, );
 
@@ -24,7 +20,7 @@ function MakeVisualization(props) {
             <div className="container">
                 <div className="group">
                     <input type="checkbox" id="xd" />
-                    <label for="xd">Click here to compare total P+R parking spaces for each Randstad city</label>
+                    <label htmlFor="xd">Click here to compare total P+R parking spaces for each Randstad city</label>
                 </div>
             </div>
             <div className="mainContainer">

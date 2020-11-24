@@ -32,7 +32,43 @@ export function combineDoubleCities(rsData) {
     // RESOURCE: https://stackoverflow.com/questions/60036060/combine-object-array-if-same-key-value-in-javascript
 }
 
+export function arrayLength (data){
+    let totalAmount = data.length;
 
+    return totalAmount
+}
+
+export function findCityData(data, question){
+    let prCapacity = getCapacity(data); // Array with all capacity data
+    let prCityArray = filterCity(data); // array with all city names
+    let prDescription = filterData(data, 'description'); // array with descriptions
+    let objectArray = wrap(prCityArray, prCapacity, prDescription); // combine capacity, cityname and description into one object
+
+
+    let findCity = filterRandstad(objectArray, question);
+    let findCityClean = listUnique(findCity)
+    return findCityClean
+}
+
+export function selectCity (data, question){
+    let prCapacity = getCapacity(data); // Array with all capacity data
+    let prCityArray = filterCity(data); // array with all city names
+    let prDescription = filterData(data, 'description'); // array with descriptions
+    let objectArray = wrap(prCityArray, prCapacity, prDescription); // combine capacity, cityname and description into one object
+
+    let findCity = filterRandstad(objectArray, question);
+    let findCityClean = listUnique(findCity)
+    console.log('clean array', findCityClean)
+    let capacity = findCityClean.map(result => result['capacity']);
+    let totalAmount = capacity.reduce((a, b) => a + b)
+    return totalAmount
+}
+
+export function countParkingSpots(data){
+    let prCapacity = getCapacity(data); 
+    let totalAmount = prCapacity.reduce((a, b) => a + b)
+    return totalAmount
+}
 
 // returns array of objects with the right citynames
 function cleanRandStadData(rsData) {
@@ -97,6 +133,8 @@ function filterCity(prData) {
     // SECOND CITY NAME in operatorData 
     let operatorDataArray = filterData(prData, 'operator'); // Array of all operator data
     let operatorCityName = filterData(operatorDataArray, 'name') // Array of names in the operator data
+
+
 
     // BOTH NAMES IN 1 OBJECT
     let cityNameObject = wrapCity(prCities, operatorCityName) // Array with object with both city names

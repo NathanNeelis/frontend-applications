@@ -130,13 +130,13 @@ export default function CreateChart(props, svgRef){
         
     function setupInput(data) {
             // &CREDITS code example by Laurens
-            select('input')
+            select('#xd')
                 .on('click', () => changeOutput(data));
         }
         
         function changeOutput(data) {
         
-            const dataSelection = select('input').property('checked') ? combineDoubleCities(data) : data
+            const dataSelection = select('#xd').property('checked') ? combineDoubleCities(data) : data
             console.log('new data', dataSelection)
             // RESOURCE selecting checkbox: https://bl.ocks.org/johnnygizmo/3d593d3bf631e102a2dbee64f62d9de4
         

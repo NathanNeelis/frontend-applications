@@ -9,7 +9,7 @@ function Title(props){
 
   // Styling
 let HeaderStyle = {
-  margin: "1em 0 1em 0",
+  margin: "0em 0 1em 0",
   fontFamily: "'Thasadith', sans-serif",
   fontSize: "3em"
 };

@@ -6,20 +6,15 @@ import HighlightComponent from './components/highlightComponent';
 import Intro from './components/intro'
 import MakeVisualization from './components/barChart'
 import Background from './img/background.svg'; 
-
-let AppStyle = {
-  height: "100%",
-  backgroundImage: `url(${Background})`,
-  backgroundPosition: "center",
-  backgroundAttachment: "fixed",
-  backgroundSize: "cover",
-};
+import CountFromInput from './components/countInput'
+import CTA from './components/cta'
+import SubTitle from './components/subHeader'
 
 
 // RESOURCE: https://stackoverflow.com/questions/39195687/setting-a-backgroundimage-with-react-inline-styles
 
 export default function App () {
-const [data, setData] = useState(null);
+const [allData, setAllData] = useState(null);
 
 useEffect (() => {
   async function fetchData() {
@@ -27,33 +22,42 @@ useEffect (() => {
     const response = await fetch(endpointNPR);
     const data = await response.json();
 
-    let prData = cleaningData(data);
+    setAllData(data);
+  }
+  fetchData()
+  
 
-    setData(prData);
-    }
-    fetchData()
-
-  }, []);
+}, []);
 
   return (
     <div className="App" style={ AppStyle }>
       <div className="Content">
-        {data && <Title title='Laat je auto buiten de stad!' /> }
-        <Intro intro="The cities become busier and busier every year. 
-          In the city centre areas of the cities is hardly 
-          any room left for cars. This is the reason most 
-          city centers can be reached with public transport. 
-          But public transport can be very expensive if you travel 
-          with multiple persons, especially for long distances. 
-          ut parking your car near the city center can be very expensive as well. 
-          There are also people that want to travel by train, 
-          but cannot park their car at the train station. 
-          Take for example Amsterdam Central station, 
-          it's nearly impossible to park your car near 
-          and if you are able to find a parking garage, 
-          you probably pay a high amount. "/>
+        <Title title='Laat je auto buiten de stad!' />
+        <Intro />
         <HighlightComponent />
-        {data && <MakeVisualization data={data}/>}
+        <SubTitle title="Maar zijn er genoeg P+R faciliteiten?"/>
+        <CTA target="#statistics" content="Bekijk jouw stad!"/>
+
+        {allData && <section id="statistics" >
+          <CountFromInput allData={ allData } />
+        </section> }
+        {/* Feedback blob */}
+
+        <CTA target="#d3BarChart" content="P+R in de Randstad"/>
+
+        {/* subkop d3 visual */}
+        {/* intro d3 visual  */}
+        {allData && <section id="d3BarChart">
+          <MakeVisualization data={cleaningData(allData)}/>
+        </section> }
+        <CTA target="#endConclusion" content="Lees de conclusie"/>
+        {/* CTA  */}
+        <section id="endConclusion">
+
+        </section>
+        {/* subkop conlusie */}
+        {/* intro conclusie */}
+        {/* conclusie  */}
       </div>
     </div>
   )
@@ -65,3 +69,12 @@ useEffect (() => {
 
 // FETCH DATA WITH USE EFFECT
 // RESOURCE https://www.youtube.com/watch?v=k0WnY0Hqe5c
+
+
+let AppStyle = {
+  height: "100%",
+  backgroundImage: `url(${Background})`,
+  backgroundPosition: "center",
+  backgroundAttachment: "fixed",
+  backgroundSize: "cover",
+};
