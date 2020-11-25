@@ -1,11 +1,14 @@
 // import React, { useState, useEffect } from 'react';
+import CountUp from 'react-countup';
 
 export default function CountToTarget (props){
     const target = props.count;
 
     return (
         <div className="countContainer">
-            <div className='counter' style={ counterValue }>{ target }</div>
+            <div className='counter' style={ counterValue }>
+                <CountUp end={ target } duration={5}/>
+            </div>
             <h3>{props.title}</h3>
         </div>
     );

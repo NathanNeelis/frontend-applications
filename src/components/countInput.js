@@ -4,6 +4,7 @@ import { arrayLength, countParkingSpots } from './transform';
 import SubTitle from './subHeader';
 import CountToTarget from './count';
 import CityImage from './cityImage'
+import CountUp from 'react-countup';
 
 export default function CountFromInput (props){
     const [city, setCity] = useState(0);
@@ -49,7 +50,9 @@ export default function CountFromInput (props){
                 <CountToTarget count={countParkingSpots(props.allData)} title="Alle parkeerplaatsen" /> 
                 {/* ANOTHER COUNT  */}
                 <div className="countContainer">
-                    <div className='counter' style={ counterValue }>{ amount.length } </div>
+                    <div className='counter' style={ counterValue }>
+                        <CountUp end={ amount.length } duration={5}/>
+                        </div>
                     <div className='cityInputContainer'>
                         <input id="cityInput" placeholder='Search for a city' />
                         <button id="submitBtn" type="button" onClick={getCityName}>
