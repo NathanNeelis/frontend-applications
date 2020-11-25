@@ -28,7 +28,7 @@ export default function CreateChart(props, svgRef){
     const margin = {
     top: 10,
     right: 120,
-    bottom: 230,
+    bottom: 150,
     left: 80
     }
     const innerWidth = width - margin.left - margin.right;

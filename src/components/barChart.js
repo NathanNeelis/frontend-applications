@@ -3,7 +3,7 @@ import CreateChart from './d3visual/createChart'
 
 
   let SvgStyle = {
-    height: "80vh",
+    height: "60vh",
     width: "50vw"
   }
 

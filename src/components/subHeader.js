@@ -8,7 +8,7 @@ function SubTitle(props){
 
     // Styling
 let SubHeaderStyle = {
-    margin: "1em 0 0 0"
+    margin: "1em 2em 0 2em"
   };
     
   

@@ -213,3 +213,36 @@ label::after {
 .infoBlock h2{
   color:white;
 }
+
+.ConclusionBlob{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.RoundelBlob{
+  width:35%;
+  position:relative;
+  margin-left:2em;
+}
+
+.RoundelCityName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-weight:700;
+  font-size:1.5em;
+}
+
+.infoBlob{
+  width:60%;
+  text-align:left;
+  margin:0 2em
+}
+
+.infoBlob h3{
+  color:#0065a2;
+}

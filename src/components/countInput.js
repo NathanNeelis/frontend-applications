@@ -9,7 +9,7 @@ export default function CountFromInput (props){
     const [city, setCity] = useState(0);
     const [amount, setAmount] = useState(findCityData(props.allData, localStorage.getItem('city')));
     const [myCity, setMyCity] = useState(localStorage.getItem('city'))
-    const [parkingSpots, setParkingSpots] = useState(selectCity(props.allData, localStorage.getItem('city')));
+    const [parkingSpots, setParkingSpots] = useState(selectCity(props.allData, 'Amsterdam')); //useState('loading...');
     const storage = window.localStorage;
 
     useEffect (() => {
@@ -17,18 +17,28 @@ export default function CountFromInput (props){
         setCity(storageValue)
         let cityName = document.getElementById('cityInput')
         cityName.value = city
+        
     }, [city]);
+
+    useEffect (() => {
+            let parkingSpotsData = localStorage.getItem('city')
+            if (parkingSpotsData === null){
+                setParkingSpots(selectCity(props.allData, 'Amsterdam'))
+            } else {
+                setParkingSpots(selectCity(props.allData, localStorage.getItem('city')))
+            }
+    }, [props.allData]);
 
     function getCityName(){
         let cityName = document.getElementById('cityInput').value
         storage.setItem('city', cityName)
         // UPDATE COUNT VALUE
+        
         setMyCity(cityName)
         setAmount(findCityData(props.allData, cityName))
         setParkingSpots(selectCity(props.allData, cityName))
-        
     }
-    console.log(amount)
+    
     
     return (
         <div>
@@ -48,18 +58,19 @@ export default function CountFromInput (props){
                     </div>
                 </div>
             </article>
-            <article>
+                {myCity && <article>
                 <div className="infoBlock">
                     <div>
                         <h2> {myCity}</h2>
-                        <p>
-                            <span>{myCity}</span> heeft ongeveer <span>xxx -props toevoegen-</span> toeristen per dag en <span>{amount.length}</span> Park en Ride faciliteiten dat een totaal heeft van <span>{parkingSpots}</span> parkeerplaatsen.
-                        </p>
+                        {parkingSpots && <p>
+                            <span>{myCity}</span> heeft ongeveer <span>xxx -props toevoegen-</span> toeristen per dag en <span>{amount.length}</span> Park en Ride faciliteiten 
+                            dat een totaal heeft van <span>{parkingSpots}</span> parkeerplaatsen.
+                        </p> }
                     </div>
                 {/* <CityInformation city={city} prFacilities="10" parkingSpots="100" /> */}
                 <CityImage />
                 </div>
-            </article>
+            </article> }
         </div>
     );
 }
@@ -72,9 +83,6 @@ export default function CountFromInput (props){
 
 // Resource local storage Laurens
 // https://vizhub.com/Razpudding/2154ed6b877c46b0866b04b46db46409?edit=files&file=index.js
-
-
-
 
 
 
@@ -95,3 +103,18 @@ let counterValue = {
 
 }
 
+
+
+
+//     })
+
+//     return (
+//         <div className="countContainer">
+//             <div className='counter' style={ counterValue }></div>
+//             <h3>{props.title}</h3>
+//         </div>
+//     );
+// }
+
+// RESOURCE COUNTER Brad Traversy
+// https://codepen.io/bradtraversy/pen/poJwqOK

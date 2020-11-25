@@ -58,7 +58,7 @@ export function selectCity (data, question){
 
     let findCity = filterRandstad(objectArray, question);
     let findCityClean = listUnique(findCity)
-    console.log('clean array', findCityClean)
+    // console.log('clean array', findCityClean)
     let capacity = findCityClean.map(result => result['capacity']);
     let totalAmount = capacity.reduce((a, b) => a + b)
     return totalAmount

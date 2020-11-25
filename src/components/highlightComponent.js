@@ -7,14 +7,11 @@ export default function HighlightComponent () {
     <div className="highlight">
       <ImageHeader />
       <AlineaDiap 
-        header="The solution:" 
-        content="The solution for this is the P+R parking areas. 
-          Often there is a special offer when you park your car in a P+R and travel 
-          the last bit into the city center with public transport. 
-          This saves you a high parking bill and the time of searching 
-          for a viable parking spot near the city."
+        header="De oplossing:" 
+        content={contentText}
           />
     </div>
   );  
   }
 
+let contentText = "De oplossing hiervoor zijn Park & Ride parkeerplaatsen. Dit zijn parkeer faciliteiten die speciaal ontworpen zijn om de auto uit de stad te weren. Vaak als je hier parkeert zijn er speciale tarieven als je vervolgens met het OV naar de stad reist. "
