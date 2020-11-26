@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "https://nathanneelis.github.io/frontend-applications/docs/",
+  "homepage": "https://nathanneelis.github.io/frontend-applications/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
