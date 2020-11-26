@@ -166,7 +166,7 @@ export default function CreateChart(props, svgRef){
                 return yScale(0);
             })
             .attr('height', 0)
-            .transition().duration(1000)
+            .transition().duration(1500)
             .attr('y', d => yScale(yValue(d)))
             .attr('height', d => innerHeight - yScale(yValue(d)))
             // console.log('data at update point', dataSelection)
@@ -184,7 +184,7 @@ export default function CreateChart(props, svgRef){
                 return yScale(0);
             })
             .attr('height', 0)
-            .transition().duration(1000)
+            .transition().duration(1500)
             .attr('y', d => yScale(yValue(d)))
             .attr('height', d => innerHeight - yScale(yValue(d)));
         
@@ -197,6 +197,7 @@ export default function CreateChart(props, svgRef){
         
             //Update the ticks	
             svg.select('.axis-x')
+            .transition().duration(1500)
             .call(axisBottom(xScale))
             .attr('transform', `translate(0, ${innerHeight})`)
             .selectAll('text')
@@ -205,6 +206,7 @@ export default function CreateChart(props, svgRef){
             .attr('x', 10)
             .attr('y', 5)
             svg.select('.axis-y')
+            .transition().duration(1500)
             .call(axisLeft(yScale).tickSize(-innerWidth))
             .selectAll('.domain') // removing Y axis line and ticks
             .remove()
