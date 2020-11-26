@@ -16,10 +16,10 @@ export default function App () {
      <div className="App" style={ AppStyle }>
       <Navigation />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/frontend-applications">
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path="/frontend-applications/about">
             <About />
           </Route>
         </Switch>

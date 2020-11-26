@@ -5,10 +5,10 @@ export default function Navigation(){
     <div className="navigation">
         <ul>
             <li>
-                <Link to="/">Home</Link>
+                <Link to="/frontend-applications">Home</Link>
             </li>
             <li>
-                <Link to="/about">About</Link>
+                <Link to="/frontend-applications/about">About</Link>
             </li>
         </ul>
     </div>
