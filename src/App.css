@@ -283,3 +283,47 @@ label::after {
 .footerContainer div{
   margin:0 2em;
 }
+
+.navigation{
+  background-color: white;
+  width:50vw;
+  margin: 0 auto;
+}
+
+.navigation li{
+  list-style:none;
+  display:inline-block;
+  padding:1em 5em;
+}
+
+.navigation li a{
+  text-decoration: none;
+  color:#0065a2;
+}
+
+.about{
+  height:100vh;
+}
+
+.socialLogo{
+  width:4em;
+  padding-left:1em;
+  margin-bottom:3em;
+}
+
+.profilePicture{
+  background-color:lightGray;
+  width:10vw;
+  border-radius: 50%;
+  border: 3px solid #0065a2;
+  margin:2em;
+}
+
+.about h1{
+  color:#0065a2;
+  margin:1em;
+}
+
+.Content a{
+  text-decoration: none;
+}
