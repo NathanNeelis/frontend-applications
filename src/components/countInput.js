@@ -32,12 +32,13 @@ export default function CountFromInput (props){
 
     function getCityName(){
         let cityName = document.getElementById('cityInput').value
-        storage.setItem('city', cityName)
+        let cityNameClean = cityName.charAt(0).toUpperCase() + cityName.slice(1)
+        storage.setItem('city', cityNameClean)
         // UPDATE COUNT VALUE
         
-        setMyCity(cityName)
-        setAmount(findCityData(props.allData, cityName))
-        setParkingSpots(selectCity(props.allData, cityName))
+        setMyCity(cityNameClean)
+        setAmount(findCityData(props.allData, cityNameClean))
+        setParkingSpots(selectCity(props.allData, cityNameClean))
     }
     
     

@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.0ddf84b1.chunk.css",
-    "main.js": "./static/js/main.992d64c6.chunk.js",
-    "main.js.map": "./static/js/main.992d64c6.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.5b2cf641.js",
-    "runtime-main.js.map": "./static/js/runtime-main.5b2cf641.js.map",
-    "static/js/2.308bb250.chunk.js": "./static/js/2.308bb250.chunk.js",
-    "static/js/2.308bb250.chunk.js.map": "./static/js/2.308bb250.chunk.js.map",
-    "static/js/3.51535aad.chunk.js": "./static/js/3.51535aad.chunk.js",
-    "static/js/3.51535aad.chunk.js.map": "./static/js/3.51535aad.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.0ddf84b1.chunk.css.map": "./static/css/main.0ddf84b1.chunk.css.map",
-    "static/js/2.308bb250.chunk.js.LICENSE.txt": "./static/js/2.308bb250.chunk.js.LICENSE.txt",
-    "static/media/background.429773e0.svg": "./static/media/background.429773e0.svg",
-    "static/media/App.css": "./static/media/check-circle.47ac3f18.svg",
-    "static/media/city-roundel.423065e2.svg": "./static/media/city-roundel.423065e2.svg",
-    "static/media/park-ride-amsterdamnoord.ebfcfecd.jpg": "./static/media/park-ride-amsterdamnoord.ebfcfecd.jpg",
-    "static/media/parking.06c52f0d.jpg": "./static/media/parking.06c52f0d.jpg"
+    "main.css": "/frontend-applications/static/css/main.4d86045a.chunk.css",
+    "main.js": "/frontend-applications/static/js/main.ee8d1f1d.chunk.js",
+    "main.js.map": "/frontend-applications/static/js/main.ee8d1f1d.chunk.js.map",
+    "runtime-main.js": "/frontend-applications/static/js/runtime-main.feef0075.js",
+    "runtime-main.js.map": "/frontend-applications/static/js/runtime-main.feef0075.js.map",
+    "static/js/2.308bb250.chunk.js": "/frontend-applications/static/js/2.308bb250.chunk.js",
+    "static/js/2.308bb250.chunk.js.map": "/frontend-applications/static/js/2.308bb250.chunk.js.map",
+    "static/js/3.51535aad.chunk.js": "/frontend-applications/static/js/3.51535aad.chunk.js",
+    "static/js/3.51535aad.chunk.js.map": "/frontend-applications/static/js/3.51535aad.chunk.js.map",
+    "index.html": "/frontend-applications/index.html",
+    "static/css/main.4d86045a.chunk.css.map": "/frontend-applications/static/css/main.4d86045a.chunk.css.map",
+    "static/js/2.308bb250.chunk.js.LICENSE.txt": "/frontend-applications/static/js/2.308bb250.chunk.js.LICENSE.txt",
+    "static/media/background.429773e0.svg": "/frontend-applications/static/media/background.429773e0.svg",
+    "static/media/App.css": "/frontend-applications/static/media/check-circle.47ac3f18.svg",
+    "static/media/city-roundel.423065e2.svg": "/frontend-applications/static/media/city-roundel.423065e2.svg",
+    "static/media/park-ride-amsterdamnoord.ebfcfecd.jpg": "/frontend-applications/static/media/park-ride-amsterdamnoord.ebfcfecd.jpg",
+    "static/media/parking.06c52f0d.jpg": "/frontend-applications/static/media/parking.06c52f0d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b2cf641.js",
+    "static/js/runtime-main.feef0075.js",
     "static/js/2.308bb250.chunk.js",
-    "static/css/main.0ddf84b1.chunk.css",
-    "static/js/main.992d64c6.chunk.js"
+    "static/css/main.4d86045a.chunk.css",
+    "static/js/main.ee8d1f1d.chunk.js"
   ]
 }
