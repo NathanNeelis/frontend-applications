@@ -86,8 +86,8 @@ I also went looking for information on tourists. It might not be an exact datase
 ### Resources & acknowledgements
 
 **Examples for creating my bar chart**  
-* [Currans tutorial](https://vizhub.com/curran/a44b38541b6e47a4afdd2dfe67a302c5)  
-* [Laurens live coding example](https://vizhub.com/Razpudding/c2a9c9b4fde84816931c404951c79873)  
+[Currans tutorial](https://vizhub.com/curran/a44b38541b6e47a4afdd2dfe67a302c5)  
+[Laurens live coding example](https://vizhub.com/Razpudding/c2a9c9b4fde84816931c404951c79873)  
    
 
 **Data sets**   
