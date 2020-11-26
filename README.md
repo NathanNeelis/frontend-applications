@@ -1,5 +1,5 @@
-### functional-programming & Frontend Data
-functional-programming - Frontend Data 20/21  
+### Tech Track - Frontend Applications
+Frontend Applications 20/21  
 Student name: Nathan Neelis  
 :earth_americas: [live website](https://nathanneelis.github.io/frontend-applications/)
 
@@ -10,31 +10,31 @@ Student name: Nathan Neelis
 For the Volkskrant we are taking a look at the RDW datasets to find interesting insights for a potential article about the car in the city. The subject is "the car in the city" and the datasets contains all kind of information about parking. But we're free to explore other data as well that has to do with the car in the city.
 
 ### Intro
-The cities become busier and busier every year. In the city centre areas of the cities is hardly any room left for cars. This is the reason most city centers can be reached with public transport. But public transport can be very expensive if you travel with multiple persons, especially for long distances. But parking your car near the city center can be very expensive as well. There are also people that want to travel by train, but cannot park their car at the train station. Take for example Amsterdam Central station, it's nearly impossible to park your car near and if you are able to find a parking garage, you probably pay a high amount.   
+The cities become busier and busier every year. In the city center areas of the cities is hardly any room left for cars. This is the reason most city centers can be reached with public transport. But public transport can be very expensive if you travel with multiple persons, especially for long distances. But parking your car near the city center can be very expensive as well. There are also people that want to travel by train, but cannot park their car at the train station. Take for example Amsterdam Central station, it's nearly impossible to park your car near and if you are able to find a parking garage, you probably pay a high amount.   
   
 The solution for this is the P+R parking areas. Often there is a special offer when you park your car in a P+R and travel the last bit into the city center with public transport. This saves you a high parking bill and the time of searching for a viable parking spot near the city.
 
 ### Research questions
 **Main research question: Which city uses the Park and Ride parking areas the best to keep cars from their city center?**   
-**Sub question 1:** Which Randstad cities facilitates the Park and Ride concept the best?  
+**Sub question 1:** Which Randstad cities facilitate the Park and Ride concept the best?  
 **Sub question 2:** How many facilities are there?  
-**Sub question 3:** What is the capicity?  
-**Sub question 4:** How much do our major cities (Randstad) use Park & Ride falicities?
+**Sub question 3:** What is the capacity?  
+**Sub question 4:** How much do our major cities (Randstad) use Park & Ride facilities?
 
 ### Concept
-This is an informative website that gives insights in the gathered data about the "car in the city".  
+This is an informative website that gives insights into the gathered data about the "car in the city".  
 The area I dived into is the Park & Ride facilities and their capacity.  
-In this concept you will be able to get answers on the research questions above.  
-By visualizing the data into visuals like a bar chart, or an input depending information block it is easy to see which city does use Park & Ride facilities a lot and which do less. It also gives the oppertunity to really dive into a city of your interest.  
+In this concept, you will be able to get answers to the research questions above.  
+By visualizing the data into visuals like a bar chart, or an input depending information block it is easy to see which city does use Park & Ride facilities a lot and which do less. It also gives the opportunity to really dive into a city of your interest.  
   
 ### Features
 #### Search information on a city of your interest 
 By using the input you can find out how many Park & Ride facilities a city of your interests has.  
-To the left are the total amount of Park & Ride facilities and the total capicity in The Netherlands according to the NPR open dataset.  
+To the left are the total amount of Park & Ride facilities and the total capacity in The Netherlands according to the NPR open dataset.  
 ![input](https://user-images.githubusercontent.com/55492381/100352468-4bc6b380-2fed-11eb-92bd-16ff9693c996.gif)  
 
 #### A highlighted on the Randstad in a bar chart
-In the bar chart the Randstad is highlighted because it are the major cities in The Netherlands. And possibly have the most use of keeping the cars out of the inner city.  
+In the bar chart, the Randstad is highlighted because they are the major cities in The Netherlands. And possibly have the most use of keeping the cars out of the inner city.  
 ![barchart](https://user-images.githubusercontent.com/55492381/100353266-8e3cc000-2fee-11eb-90cb-ad789fbebe52.gif)
 
 
@@ -45,8 +45,8 @@ I filtered this dataset on all parking areas that had "P+R" in their name.
 These were 405 results from which I fetched the data and saved it into a [Github Gist](https://gist.githubusercontent.com/NathanNeelis/b28e16c0433b12da6bc716b276901ae9/raw/402754fa45924af802d06c5672043153bb990d5b/NPR_park_and_ride).  
 The interesting variables in these specific datasets are:  
 * Description - _Name of the parking area_    
-* Accespoint address city - _city of the parking area_  
-* Operator name - _Also name of the city, in case the accespoint data is invalid_  
+* Access point address city - _city of the parking area_  
+* Operator name - _Also name of the city, in case the access point data is invalid_  
 * Specifications capacity - _Amount of parking spaces_  
   
 I also went looking for information on tourists. It might not be an exact dataset, but since I used this data in my conclusion I wanted to mention this data source here as well.  
