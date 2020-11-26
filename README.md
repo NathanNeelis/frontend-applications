@@ -81,7 +81,7 @@ I also went looking for information on tourists. It might not be an exact datase
 [GH pages](https://www.npmjs.com/package/gh-pages)  
 
 ### License
-[MIT License](https://github.com/NathanNeelis/frontend-data/blob/master/LICENSE)   
+[MIT License](https://github.com/NathanNeelis/frontend-applications/blob/master/LICENSE)   
 
 ### Resources & acknowledgements
 
@@ -122,7 +122,7 @@ I also went looking for information on tourists. It might not be an exact datase
 [Promise all](https://vizhub.com/Razpudding/781fc8abc97443919613184546720ab0?edit=files&file=index.js) Laurens  
 [FS writing json file](https://dlo.mijnhva.nl/d2l/ext/rp/192600/lti/framedlaunch/a44d697c-b552-4a8c-b5e7-12fe6b8d704a) Rijk  
 [FS writing json file](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback) NodeJS.org  
-[selecting checkbox in D3](https://bl.ocks.org/johnnygizmo/3d593d3bf631e102a2dbee64f62d9de4) Johnny Matthews
+[selecting checkbox in D3](https://bl.ocks.org/johnnygizmo/3d593d3bf631e102a2dbee64f62d9de4) Johnny Matthews  
 [background image](https://stackoverflow.com/questions/39195687/setting-a-backgroundimage-with-react-inline-styles)  
 [Fetch data from api in React](https://www.youtube.com/watch?v=T3Px88x_PsA)  
 [Fetch data with useEffect](https://www.youtube.com/watch?v=k0WnY0Hqe5c)
