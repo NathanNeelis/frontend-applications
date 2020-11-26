@@ -35,7 +35,7 @@ export default function CountFromInput (props){
         let cityNameClean = cityName.charAt(0).toUpperCase() + cityName.slice(1)
         storage.setItem('city', cityNameClean)
         // UPDATE COUNT VALUE
-        
+        console.log('cityNameClean', cityNameClean)
         setMyCity(cityNameClean)
         setAmount(findCityData(props.allData, cityNameClean))
         setParkingSpots(selectCity(props.allData, cityNameClean))
