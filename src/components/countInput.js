@@ -106,18 +106,3 @@ let counterValue = {
 
 }
 
-
-
-
-//     })
-
-//     return (
-//         <div className="countContainer">
-//             <div className='counter' style={ counterValue }></div>
-//             <h3>{props.title}</h3>
-//         </div>
-//     );
-// }
-
-// RESOURCE COUNTER Brad Traversy
-// https://codepen.io/bradtraversy/pen/poJwqOK
