@@ -10,6 +10,8 @@ import CTA from '../components/cta'
 import SubTitle from '../components/subHeader'
 import Conclusion from '../components/conlusion'
 import Footer from '../components/footer'
+import Image from '../components/image'
+import PRIcon from '../img/parkAndRide.svg'
 
 export default function Home (){
     const [allData, setAllData] = useState(null);
@@ -32,6 +34,7 @@ export default function Home (){
         <div className="Content">
             <section>
             <Title title='Laat je auto buiten de stad!' />
+            <Image image={PRIcon} alt='P+R Icon' class='PRIcon' />
             <Intro content={introText}/>
             <HighlightComponent />
             <SubTitle title="Maar zijn er genoeg P+R faciliteiten?"/>
