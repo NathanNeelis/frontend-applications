@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/frontend-applications/static/css/main.4d86045a.chunk.css",
-    "main.js": "/frontend-applications/static/js/main.7bd8adab.chunk.js",
-    "main.js.map": "/frontend-applications/static/js/main.7bd8adab.chunk.js.map",
-    "runtime-main.js": "/frontend-applications/static/js/runtime-main.feef0075.js",
-    "runtime-main.js.map": "/frontend-applications/static/js/runtime-main.feef0075.js.map",
-    "static/js/2.308bb250.chunk.js": "/frontend-applications/static/js/2.308bb250.chunk.js",
-    "static/js/2.308bb250.chunk.js.map": "/frontend-applications/static/js/2.308bb250.chunk.js.map",
-    "static/js/3.51535aad.chunk.js": "/frontend-applications/static/js/3.51535aad.chunk.js",
-    "static/js/3.51535aad.chunk.js.map": "/frontend-applications/static/js/3.51535aad.chunk.js.map",
+    "main.css": "/frontend-applications/static/css/main.7e00c2e5.chunk.css",
+    "main.js": "/frontend-applications/static/js/main.64f31eba.chunk.js",
+    "main.js.map": "/frontend-applications/static/js/main.64f31eba.chunk.js.map",
+    "runtime-main.js": "/frontend-applications/static/js/runtime-main.3b2cd86e.js",
+    "runtime-main.js.map": "/frontend-applications/static/js/runtime-main.3b2cd86e.js.map",
+    "static/js/2.6f1ad58f.chunk.js": "/frontend-applications/static/js/2.6f1ad58f.chunk.js",
+    "static/js/2.6f1ad58f.chunk.js.map": "/frontend-applications/static/js/2.6f1ad58f.chunk.js.map",
+    "static/js/3.574fa1a7.chunk.js": "/frontend-applications/static/js/3.574fa1a7.chunk.js",
+    "static/js/3.574fa1a7.chunk.js.map": "/frontend-applications/static/js/3.574fa1a7.chunk.js.map",
     "index.html": "/frontend-applications/index.html",
-    "static/css/main.4d86045a.chunk.css.map": "/frontend-applications/static/css/main.4d86045a.chunk.css.map",
-    "static/js/2.308bb250.chunk.js.LICENSE.txt": "/frontend-applications/static/js/2.308bb250.chunk.js.LICENSE.txt",
+    "static/css/main.7e00c2e5.chunk.css.map": "/frontend-applications/static/css/main.7e00c2e5.chunk.css.map",
+    "static/js/2.6f1ad58f.chunk.js.LICENSE.txt": "/frontend-applications/static/js/2.6f1ad58f.chunk.js.LICENSE.txt",
     "static/media/background.429773e0.svg": "/frontend-applications/static/media/background.429773e0.svg",
     "static/media/App.css": "/frontend-applications/static/media/check-circle.47ac3f18.svg",
     "static/media/city-roundel.423065e2.svg": "/frontend-applications/static/media/city-roundel.423065e2.svg",
+    "static/media/github.67be3ce1.svg": "/frontend-applications/static/media/github.67be3ce1.svg",
+    "static/media/nathan.cbb73732.jpg": "/frontend-applications/static/media/nathan.cbb73732.jpg",
     "static/media/park-ride-amsterdamnoord.ebfcfecd.jpg": "/frontend-applications/static/media/park-ride-amsterdamnoord.ebfcfecd.jpg",
     "static/media/parking.06c52f0d.jpg": "/frontend-applications/static/media/parking.06c52f0d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.feef0075.js",
-    "static/js/2.308bb250.chunk.js",
-    "static/css/main.4d86045a.chunk.css",
-    "static/js/main.7bd8adab.chunk.js"
+    "static/js/runtime-main.3b2cd86e.js",
+    "static/js/2.6f1ad58f.chunk.js",
+    "static/css/main.7e00c2e5.chunk.css",
+    "static/js/main.64f31eba.chunk.js"
   ]
 }
