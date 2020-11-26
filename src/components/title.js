@@ -11,6 +11,7 @@ function Title(props){
 let HeaderStyle = {
   margin: "0em 0 1em 0",
   fontFamily: "'Thasadith', sans-serif",
-  fontSize: "3em"
+  fontSize: "3em",
+  color:"#0065a2"
 };
     

@@ -60,8 +60,16 @@ export function selectCity (data, question){
     let findCityClean = listUnique(findCity)
     // console.log('clean array', findCityClean)
     let capacity = findCityClean.map(result => result['capacity']);
-    let totalAmount = capacity.reduce((a, b) => a + b)
-    return totalAmount
+    console.log('this is capacity', capacity)
+    if (capacity.length > 1){
+        let totalAmount = capacity.reduce((a, b) => a + b)
+        return totalAmount
+    } else {
+        let totalAmount = "Kan de stad niet vinden"
+        return totalAmount
+    }
+    
+    
 }
 
 export function countParkingSpots(data){

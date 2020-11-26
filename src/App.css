@@ -6,6 +6,7 @@
 
 body{
   font-family: 'Raleway', sans-serif;
+  color:#333333;
 }
 
 .App {
@@ -240,9 +241,45 @@ label::after {
 .infoBlob{
   width:60%;
   text-align:left;
-  margin:0 2em
+  margin:0 4em 0 2em;
+  line-height:1.45em;
 }
 
 .infoBlob h3{
   color:#0065a2;
+}
+
+#endConclusion{
+  padding-bottom:8em;
+}
+
+#endConclusion a{
+  color:#333333;
+  text-decoration: underline;
+  text-decoration-color: #00bfbf;
+}
+
+.footer{
+  background-color:#00bfbf;
+  color:white;
+  padding:1em;
+  text-align:left;
+}
+
+.footer a{
+  /* text-decoration:none; */
+  color:white;
+}
+
+.footer li{
+  list-style:none;
+}
+
+.footerContainer{
+  display:flex;
+  flex-direction: row;
+}
+
+.footerContainer div{
+  margin:0 2em;
 }

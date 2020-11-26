@@ -8,8 +8,10 @@ export default function Conclusion (props) {
             <img src={roundel} alt="city icon visual" className="RoundelCityImage" />
         </div>
         <div className="infoBlob">
-            <h3>Best reachable by Park and Ride facilities</h3>
-            <p>some intro</p>
+            <h3>{props.title}</h3>
+            <p>{props.conclusion}
+            {props.bron && <a href={props.bron} target="blank">NBC.</a>}
+            </p>
         </div>
     </div>
     );

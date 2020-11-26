@@ -66,7 +66,7 @@ export default function CountFromInput (props){
                     <div>
                         <h2> {myCity}</h2>
                         {parkingSpots && <p>
-                            <span>{myCity}</span> heeft ongeveer <span>xxx -props toevoegen-</span> toeristen per dag en <span>{amount.length}</span> Park en Ride faciliteiten 
+                            <span>{myCity}</span> heeft <span>{amount.length}</span> Park en Ride faciliteiten 
                             dat een totaal heeft van <span>{parkingSpots}</span> parkeerplaatsen.
                         </p> }
                     </div>
